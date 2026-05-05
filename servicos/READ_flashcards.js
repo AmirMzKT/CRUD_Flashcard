@@ -1,7 +1,7 @@
 import flashcards from "../dados/flashcards.js";
 
 function listarFlashcards() {
-  console.log (flashcards)
+  return flashcards;
 }
 
-listarFlashcards()
+export default listarFlashcards;
