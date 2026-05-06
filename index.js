@@ -18,16 +18,6 @@ import {
 
 const prompt = promptSync()
 
-// 🔹 função auxiliar pra validar texto
-function textoValido(texto) {
-    return texto && texto.trim() !== ""
-}
-
-// 🔹 função auxiliar pra validar número
-function numeroValido(num) {
-    return !isNaN(num) && num > 0
-}
-
 function menu() {
     let opcao
 
@@ -204,6 +194,16 @@ function menu() {
         }
 
     } while (opcao !== "0")
+}
+
+// função auxiliar pra validar texto
+function textoValido(texto) {
+    return texto && texto.trim() !== ""
+}
+
+// função auxiliar pra validar número
+function numeroValido(num) {
+    return !isNaN(num) && num > 0
 }
 
 menu()

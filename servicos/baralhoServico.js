@@ -49,7 +49,7 @@ return true
 return false
 }
 
-// função auxiliar
+// função auxiliar (retorna o próximo ID disponível)
 function gerarId(lista) {
     return lista.length > 0 ? lista[lista.length - 1].id + 1 : 1
 }

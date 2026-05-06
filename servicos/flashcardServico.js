@@ -56,7 +56,7 @@ export function buscarPorBaralho(idBaralho) {
     return flashcards.filter(f => f.idBaralho === idBaralho)
 }
 
-// auxiliar
+// função auxiliar (retorna o próximo ID disponível)
 function gerarId(lista) {
     return lista.length > 0 ? lista[lista.length - 1].id + 1 : 1
 }
